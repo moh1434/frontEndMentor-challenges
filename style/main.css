@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base {
+	@font-face {
+		font-family: 'Rubik';
+		src: local('Rubik'), url(../public/fonts/Rubik-Bold-700.ttf) format('ttf');
+		font-weight: 700;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: 'Rubik';
+		src: local('Rubik'), url(../public/fonts/Rubik-Medium-500.ttf) format('ttf');
+		font-weight: 500;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: 'Rubik';
+		src: local('Rubik'), url(../public/fonts/Rubik-Regular-400.ttf) format('ttf');
+		font-weight: 400;
+		font-style: normal;
+	}
+}
+
+@layer utilities {
+	.bg-gradient-right {
+		background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+	}
+	.bg-gradient-left {
+		background-image: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+	}
+	.bg-gradient-bottom {
+		background-image: linear-gradient(to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+	}
+}
