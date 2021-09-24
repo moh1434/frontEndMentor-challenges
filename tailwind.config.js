@@ -24,7 +24,12 @@ module.exports = {
 				magenta: {
 					"very-light ": "hsl(289, 100%, 72%)"
 				}
-			}
+			},
+			spacing: {
+				'247': "15.4375rem",
+				"16p": "4.125rem",
+				"2p": "0.625rem"
+			},
 		},
 	},
 	variants: {
