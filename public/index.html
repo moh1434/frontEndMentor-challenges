@@ -1,16 +1,85 @@
 <!DOCTYPE html>
-<lang="ar">
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>your title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="dist_style/main.css" />
-		<link rel="stylesheet" type="text/css" href="dist_style/second.css" />
-</head>
-<body>
-	<h1 class="bg-blue-600 text-white p-3 text-center text-xl">test tailwind</h1>
-	<h1 class="test-second-css-file">test tailwind</h1>
-</body>
-</html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+		<link rel="icon" type="image/png" sizes="32x32"
+			href="./images/favicon-32x32.png">
 
+		<title>Frontend Mentor | [Challenge Name Here]</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+	</head>
+	<body>
+		<main class="main-content">
+			<h1>Simple booking</h1>
+
+			<p>Stay in touch with our dog walkers through the chat interface. This makes
+				it easy to
+				discuss arrangements and make bookings. Once the walk has been completed you
+				can rate
+				your walker and book again all through the chat.</p>
+		</main>
+		<section class="phone p-2">
+			<div class="phone__head p-3">
+					<div>
+						<span class="phone__less-symbol"><</span>
+						<div>
+							<img src="./images/avatar.jpg" alt="avatar" />
+						</div>
+						<span class="phone__user-name">Samuel Green</span>
+						<span class="phone__sub-text">Available to Walk</span>
+					</div>
+					<div class="phone_dots h-16p">
+						<span class="phone__dot1"></span>
+						<span class="phone__dot2"></span>
+						<span class="phone__dot3"></span>
+					</div>
+				</div>
+
+				<div class="phone__messenger">
+					<span class="phone__left-message">That sounds great. I’d be happy with that.</span>
+
+					<span class="phone__left-message">Could you send over some pictures of your dog, please?</span>
+
+						<div class="phone__images-parent">
+							<img src="images/dog-image-1.jpg" alt="dog">
+							<img src="images/dog-image-2.jpg" alt="dog">
+							<img src="images/dog-image-3.jpg" alt="dog">
+						</div>
+						<span class="phone__right-message">Here are a few pictures. She’s a happy girl!</span>
+						<span class="phone__right-message">Can you make it?</span>
+
+
+					<span class="phone__left-message">She looks so happy! The time we discussed works. How long
+						shall I take her out for?</span>
+
+					<div class="phone__colored-btn">
+						<span class="phone__colored-circle"></span>
+						<span class="phone__colored-text">30 minute walk</span>
+						<span class="phone__colored-price">$29</span>
+					</div>
+					<div class="phone__colored-btn">
+						<span class="phone__colored-circle"></span>
+						<span class="phone__colored-text">1 hour walk</span>
+						<span class="phone__colored-price">$49</span>
+					</div>
+
+					<div class="phone__send-box">
+						<textarea class="phone__send-message">Type a message…</textarea>
+						<span class="phone__send-btn">></span>
+					</div>
+				</div>
+			</section>
+
+			<!-- <div class="attribution">
+				Challenge by <a href="https://www.frontendmentor.io?ref=challenge"
+					target="_blank">Frontend Mentor</a>.
+				Coded by <a href="#">Your Name Here</a>.
+			</div> -->
+		</body>
+	</html>
