@@ -1,0 +1,6 @@
+.test-second-css-file{
+	@apply text-white text-xl;
+	text-align: center;
+	background-color: darkgreen;
+	padding: 0.75rem;
+}

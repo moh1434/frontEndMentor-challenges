@@ -1,0 +1,24 @@
+{
+  "name": "tailwind-starter",
+  "version": "1.0.0",
+  "repository": "https://github.com/moh1434/tailwind-starter",
+  "author": "moh1434 <moh1434.ma@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "npm-run-all --parallel only-dev only-server",
+    "only-server": "live-server ./public -V --no-browser --no-css-inject --port=8080",
+    "only-dev": "cross-env NODE_ENV=development postcss ./style --dir ./public/dist_style --watch",
+    "build": "cross-env NODE_ENV=production postcss ./style --dir ./public/dist_style"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.4",
+    "cssnano": "^5.0.8",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.15",
+    "cross-env": "^7.0.3",
+    "live-server": "^1.2.1",
+    "yarn-run-all": "^3.1.1"
+  }
+}
