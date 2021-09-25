@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 		<link rel="icon" type="image/png" sizes="32x32"
 			href="./images/favicon-32x32.png">
-
+			<link rel="stylesheet" type="text/css" href="dist_style/main.css" />
 		<title>Frontend Mentor | [Challenge Name Here]</title>
 
 		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,67 +15,73 @@
   </style>
 	</head>
 	<body>
-		<main class="main-content">
-			<h1>Simple booking</h1>
-
-			<p>Stay in touch with our dog walkers through the chat interface. This makes
-				it easy to
-				discuss arrangements and make bookings. Once the walk has been completed you
-				can rate
-				your walker and book again all through the chat.</p>
-		</main>
-		<section class="phone p-2">
-			<div class="phone__head p-3">
+		<div class="gradient"></div>
+		<main class="container">
+		<section class="phone">
+			<div class="phone__head-notch"></div>
+			<div class="phone__head">
 					<div>
-						<span class="phone__less-symbol"><</span>
+						<span class="phone__less-symbol"></span>
+							<img class="phone__avater" src="./images/avatar.jpg" alt="avatar" />
 						<div>
-							<img src="./images/avatar.jpg" alt="avatar" />
+							<span class="phone__user-name">Samuel Green</span>
+							<span class="phone__sub-text">Available to Walk</span>
 						</div>
-						<span class="phone__user-name">Samuel Green</span>
-						<span class="phone__sub-text">Available to Walk</span>
 					</div>
-					<div class="phone_dots h-16p">
+
+					
+					<div class="phone_dots">
 						<span class="phone__dot1"></span>
 						<span class="phone__dot2"></span>
 						<span class="phone__dot3"></span>
 					</div>
-				</div>
+			</div>
 
 				<div class="phone__messenger">
-					<span class="phone__left-message">That sounds great. I’d be happy with that.</span>
+					<span class="phone__message phone__message--left">That sounds great. I’d be happy with that.</span>
 
-					<span class="phone__left-message">Could you send over some pictures of your dog, please?</span>
+					<span class="phone__message phone__message--left">Could you send over some pictures of your dog, please?</span>
 
 						<div class="phone__images-parent">
 							<img src="images/dog-image-1.jpg" alt="dog">
 							<img src="images/dog-image-2.jpg" alt="dog">
 							<img src="images/dog-image-3.jpg" alt="dog">
 						</div>
-						<span class="phone__right-message">Here are a few pictures. She’s a happy girl!</span>
-						<span class="phone__right-message">Can you make it?</span>
+						<span class="phone__message phone__message--right">Here are a few pictures. She’s a happy girl!</span>
+						<span class="phone__message phone__message--right">Can you make it?</span>
 
 
-					<span class="phone__left-message">She looks so happy! The time we discussed works. How long
+					<span class="phone__message phone__message--left">She looks so happy! The time we discussed works. How long
 						shall I take her out for?</span>
 
-					<div class="phone__colored-btn">
+					<div class="phone__message phone__message--left phone__message--gradient">
 						<span class="phone__colored-circle"></span>
 						<span class="phone__colored-text">30 minute walk</span>
 						<span class="phone__colored-price">$29</span>
 					</div>
-					<div class="phone__colored-btn">
+					<div class="phone__message phone__message--left phone__message--gradient">
 						<span class="phone__colored-circle"></span>
-						<span class="phone__colored-text">1 hour walk</span>
+						<span>1 hour walk</span>
 						<span class="phone__colored-price">$49</span>
 					</div>
 
 					<div class="phone__send-box">
-						<textarea class="phone__send-message">Type a message…</textarea>
-						<span class="phone__send-btn">></span>
+						<input rows="1" class="phone__send-message" placeholder="Type a message…">
+						<span class="phone__send-btn">&gt;</span>
 					</div>
 				</div>
 			</section>
+			<section class="text-section">
+				<h1>Simple booking</h1>
+	
+				<p>Stay in touch with our dog walkers through the chat interface. This makes
+					it easy to
+					discuss arrangements and make bookings. Once the walk has been completed you
+					can rate
+					your walker and book again all through the chat.</p>
+			</section>
 
+		</main>
 			<!-- <div class="attribution">
 				Challenge by <a href="https://www.frontendmentor.io?ref=challenge"
 					target="_blank">Frontend Mentor</a>.
