@@ -21,15 +21,3 @@
 		font-style: normal;
 	}
 }
-
-@layer utilities {
-	.bg-gradient-right {
-		background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-	}
-	.bg-gradient-left {
-		background-image: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-	}
-	.bg-gradient-bottom {
-		background-image: linear-gradient(to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-	}
-}
