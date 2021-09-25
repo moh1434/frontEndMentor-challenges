@@ -1,6 +1,6 @@
 body {
 	position: relative;
-	@apply font-Rubik pt-69p pb-37p;
+	@apply font-Rubik py-69p;
 }
 
 .gradient {
