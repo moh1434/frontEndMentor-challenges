@@ -1,0 +1,30 @@
+body {
+	position: relative;
+	@apply font-Rubik py-69p;
+}
+
+.gradient {
+	@apply absolute bg-gradient-bottom top-0 -left-1/2 w-full rounded-b-full;
+	content: "";
+	height: 80vh;
+}
+
+main {
+	@apply flex justify-evenly items-center flex-col relative min-h-screen z-50;
+}
+
+/* Media Query */
+
+@screen lg {
+	body {
+		@apply py-0;
+	}
+	main {
+		@apply flex-row;
+	}
+	.gradient {
+		left: -10%;
+		width: 40%;
+		height: 85vh;
+	}
+}

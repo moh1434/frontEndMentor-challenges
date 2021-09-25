@@ -1,0 +1,22 @@
+.text-section {
+	@apply text-center max-w-440;
+}
+
+.text-section h1 {
+	@apply text-4xl font-bold py-8 text-violet-very-dark;
+}
+
+.text-section p {
+	@apply text-violet-dark;
+}
+
+/* Media Query */
+
+@screen lg {
+	.text-section {
+		@apply text-left;
+	}
+	.text-section h1 {
+		@apply text-5xl font-medium;
+	}
+}

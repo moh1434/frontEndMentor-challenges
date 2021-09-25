@@ -1,0 +1,172 @@
+.phone {
+	@apply w-247p bg-white shadow-phone p-2;
+	margin-bottom: 4.5rem;
+}
+
+.phone {
+	@apply rounded-3xl overflow-hidden;
+}
+
+@screen lg {
+	.phone {
+		@apply mb-0;
+	}
+}
+
+/*  */
+
+.phone__head-notch {
+	@apply relative rounded-t-3xl h-4;
+}
+
+.phone__head-notch::after {
+	@apply absolute top-0 left-1/2 w-1/2 bg-white rounded-b-xl;
+	content: "";
+	transform: translateX(-50%);
+	height: 1.125rem;
+}
+
+.phone__head {
+	@apply px-4 flex flex-wrap justify-between items-center rounded-b-md;
+	height: 3.125rem;
+}
+
+.phone__head-notch, .phone__head {
+	@apply bg-gradient-left;
+}
+
+.phone__head>div {
+	@apply flex flex-wrap justify-center items-center;
+}
+
+.phone__less-symbol {
+	@apply relative;
+	margin-right: 3px;
+}
+
+.phone__less-symbol::after, .phone__less-symbol::before {
+	@apply absolute bg-white;
+	content: "";
+	width: 6px;
+	height: 2px;
+	transform-origin: left;
+}
+
+.phone__less-symbol::after {
+	transform: rotate(55deg);
+}
+
+.phone__less-symbol::before {
+	transform: rotate(-55deg);
+}
+
+.phone__avater {
+	@apply block w-6 m-2 rounded-full overflow-hidden border border-white;
+}
+
+.phone__user-name {
+	@apply text-xs font-medium text-violet-light-grayish;
+}
+
+.phone__sub-text {
+	@apply text-xxxs font-normal text-violet-pale;
+	;
+}
+
+.phone__user-name, .phone__sub-text {
+	@apply block;
+}
+
+.phone_dots {
+	@apply relative;
+}
+
+.phone_dots>span {
+	@apply absolute right-0 rounded-full overflow-hidden;
+	content: "";
+	@apply border-white border;
+}
+
+.phone__dot1 {
+	top: -3px;
+}
+
+.phone__dot2 {
+	top: 0;
+}
+
+.phone__dot3 {
+	top: 3px;
+}
+
+/*  */
+
+.phone__messenger {
+	@apply bg-violet-light-grayish py-2 rounded-br-3xl;
+}
+
+.phone__messenger>* {
+	@apply p-2 m-2;
+}
+
+.phone__messenger>*:first-child {
+	@apply mt-0;
+}
+
+.phone__messenger>*:last-child {
+	@apply mb-0;
+}
+
+.phone__messenger>span {
+	@apply block;
+}
+
+.phone__message {
+	@apply text-xxxxs rounded-xl flex items-center;
+	max-width: 8.2rem;
+}
+
+.phone__message--left {
+	@apply text-violet-moderate bg-violet-pale bg-opacity-20 rounded-bl-md font-bold;
+}
+
+.phone__message--right {
+	@apply ml-auto bg-white text-violet-dark shadow rounded-br-md;
+}
+
+.phone__message--right+.phone__message--left, .phone__message--left+.phone__images-parent {
+	@apply mt-4;
+}
+
+.phone__images-parent {
+	@apply flex justify-end p-0;
+}
+
+.phone__images-parent>img {
+	@apply rounded-xl ml-2 w-10 h-10;
+}
+
+.phone__message--gradient {
+	@apply bg-gradient-right text-violet-missing pr-4;
+}
+
+.phone__colored-circle {
+	@apply w-3 h-3 mr-2 rounded-full border border-white border-opacity-50;
+}
+
+.phone__colored-price {
+	@apply text-white ml-auto font-bold text-xxs;
+}
+
+.phone__send-box {
+	@apply flex pl-4 py-2 mt-4 bg-white rounded-full;
+}
+
+.phone__send-message {
+	@apply text-blue-grayish text-xs;
+	padding-top: 2px;
+}
+
+.phone__send-btn {
+	@apply bg-violet-very-dark text-white px-2 ml-auto font-bold rounded-full;
+}
