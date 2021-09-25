@@ -1,35 +1,6 @@
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-  </ol>
-</details>
-
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-This project is a simple [Tailwind](https://tailwindui.com/) starter that includes:
-* [PostCss](https://postcss.org/) to remove unused css.
-* [autoprefixer](https://www.npmjs.com/package/autoprefixer) to add css vendor prefixes.
-* [cssnano](https://www.npmjs.com/package/cssnano) to compress css.
-* [live-server](https://www.npmjs.com/package/live-server) to add auto reload server to our development proccess.
-
-Note: This project dose not use Webpack.
+This solution is for [Chat-app-CSS-illustration](https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY) challenge from frontEndMentor website.
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -43,8 +14,9 @@ Note: This project dose not use Webpack.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/moh1434/tailwind-starter.git
+   git clone https://github.com/moh1434/frontEndMentor-challenges
    ```
+   make sure you are in `Chat-app-CSS-illustration` branch
 2. Install yarn packages
    ```sh
    yarn install
@@ -52,26 +24,17 @@ Note: This project dose not use Webpack.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-You can modify `./public/index.html` as you need. \
-Your css files should be only on `./style` folder. \
-Note: the `./public/dist_style` folder is generated automaticaly by postcss, so you Should never modify it. Insted, write your css files in the `./style` folder that located on the root of the project. 
 
 * For development proccess:
    ```sh
    yarn run dev
    ```
-This will generate your css on `./public/dist_style` folder and start live server on (http://127.0.0.1:8080/) or (http://localhost:8080/). \
-Note: you need to refresh the page every time you restart the `yarn run dev` or `yarn run only-server` command. \
-Note: To make development proccess faster, tailwind unused css will removed only on production. 
-
 
 * For Production:
    ```sh
    yarn run build
    ```
    
-This will generate your css on `./public/dist_style` and optmize it to be ready to deploy. \
-
 <!-- CONTRIBUTING -->
 ## Contributing
 
