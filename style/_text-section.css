@@ -2,11 +2,11 @@
 	@apply text-center max-w-440;
 }
 
-.text-section h1 {
+.text-section .text-section__title {
 	@apply text-4xl font-bold py-8 text-violet-very-dark;
 }
 
-.text-section p {
+.text-section .text-section__paragraph {
 	@apply text-violet-dark;
 }
 
@@ -16,7 +16,7 @@
 	.text-section {
 		@apply text-left;
 	}
-	.text-section h1 {
+	.text-section .text-section__title {
 		@apply text-5xl font-medium;
 	}
 }
