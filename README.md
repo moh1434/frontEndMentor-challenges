@@ -34,7 +34,44 @@ This solution is for [Chat-app-CSS-illustration](https://www.frontendmentor.io/c
    ```sh
    yarn run build
    ```
-   
+  
+ ## What I learned
+ I learned that using **BEM** naming convention with **tailwind** is **not a good idea**.
+ for example i prefer to write:
+```		
+<section class="max-w-440 text-center lg:text-left">
+   <h1 class="text-4xl font-bold py-8 text-violet-very-dark lg:text-5xl lg:font-medium">Simple booking</h1>
+   <p class="text-violet-dark">Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.</p>
+</section>
+```
+insted of:
+ ```
+<section class="text-section">
+   <h1 class="text-section__title">Simple booking</h1>
+   <p class="text-section__paragraph">Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.</p>
+</section>
+
+<!-- and css: -->
+<style>
+ .text-section {
+	@apply text-center max-w-440;
+}
+.text-section .text-section__title {
+	@apply text-4xl font-bold py-8 text-violet-very-dark;
+}
+.text-section .text-section__paragraph {
+	@apply text-violet-dark;
+}
+@screen lg {
+	.text-section {
+		@apply text-left;
+	}
+	.text-section .text-section__title {
+		@apply text-5xl font-medium;
+	}
+}
+</style>
+ ```
 <!-- CONTRIBUTING -->
 ## Contributing
 
